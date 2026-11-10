@@ -40,3 +40,8 @@
 .home-feature>.project-toolbar .action-itch:hover{background:#6d587e;border-color:#6d587e}
 
 .home-feature>.project-toolbar .action-details{background:#f1ebf6;color:#78638a;border-color:#ded3e8}.home-feature>.project-toolbar .action-details:hover{background:#e7ddee;color:#554262}
+
+/* Spark gallery: full-width cover followed by two photos side by side. */
+#spark-gallery>.section-evidence{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
+#spark-gallery>.section-evidence>.spark-original-cover{grid-column:1/-1}
+#spark-gallery>.section-evidence>a:has(img){min-width:0;margin:0!important}

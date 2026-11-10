@@ -45,3 +45,8 @@
 #spark-gallery>.section-evidence{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
 #spark-gallery>.section-evidence>.spark-original-cover{grid-column:1/-1}
 #spark-gallery>.section-evidence>a:has(img){min-width:0;margin:0!important}
+
+/* Keep the Spark poster within the available viewport height. */
+#spark-portfolio .spark-poster{display:flex;justify-content:center;margin:20px 0}
+#spark-portfolio .spark-poster img{width:auto;max-width:100%;height:auto;max-height:calc(100svh - var(--header-height) - 140px);object-fit:contain}
+@media(max-width:760px){#spark-portfolio .spark-poster img{max-height:calc(100svh - var(--header-height) - 200px)}}

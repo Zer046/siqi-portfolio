@@ -50,3 +50,13 @@
 #spark-portfolio .spark-poster{display:flex;justify-content:center;margin:20px 0}
 #spark-portfolio .spark-poster img{width:auto;max-width:100%;height:auto;max-height:calc(100svh - var(--header-height) - 140px);object-fit:contain}
 @media(max-width:760px){#spark-portfolio .spark-poster img{max-height:calc(100svh - var(--header-height) - 200px)}}
+
+/* Life Path poster and presentation. */
+.life-prototype-link{display:inline-flex;align-items:center;min-height:44px;color:#78638a;text-decoration:underline;text-underline-offset:5px}
+#life-poster .media-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+.presentation-frame{display:block;aspect-ratio:16/9;background:#f2eff0}
+.presentation-frame img{display:block;width:100%;height:100%;object-fit:contain}
+.presentation-controls{display:flex;align-items:center;justify-content:center;gap:24px;margin-top:14px}
+.presentation-controls button{min-width:48px;min-height:44px;border:1px solid #cabbd5;border-radius:5px;background:#e4dcec;color:#655272;font-size:24px}
+.presentation-controls button:disabled{opacity:.35;cursor:default}
+.presentation-count{min-width:75px;text-align:center;font-variant-numeric:tabular-nums}

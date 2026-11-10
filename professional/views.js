@@ -31,6 +31,19 @@ function overviewHero(project,language){
 }
 function analysisSection(section,project,language){
  const node=el('section','case-section case-'+section.kind);node.id=section.id;node.setAttribute('aria-labelledby',section.id+'-title');const title=el('h2','',section.title);title.id=section.id+'-title';node.append(title);
+
+ if(section.kind==='slideshow'){
+  const viewer=el('div','presentation-viewer');viewer.tabIndex=0;viewer.setAttribute('role','region');viewer.setAttribute('aria-label',text(language,'Project presentation','项目演示文稿'));
+  const frame=link('','','zoomable presentation-frame');frame.dataset.zoom='true';
+  const img=image(section.media[0].src,section.media[0].alt,false);img.width=1800;img.height=1013;frame.append(img);
+  const controls=el('div','presentation-controls'),count=el('span','presentation-count');count.setAttribute('aria-live','polite');
+  let current=0;
+  const show=index=>{current=Math.max(0,Math.min(section.media.length-1,index));const slide=section.media[current];img.src=slide.src;img.alt=slide.alt;frame.href=slide.src;count.textContent=(current+1)+' / '+section.media.length;prev.disabled=current===0;next.disabled=current===section.media.length-1};
+  const prev=button('←','presentation-prev',()=>show(current-1)),next=button('→','presentation-next',()=>show(current+1));
+  prev.setAttribute('aria-label',text(language,'Previous slide','上一页'));next.setAttribute('aria-label',text(language,'Next slide','下一页'));
+  viewer.addEventListener('keydown',event=>{if(event.key==='ArrowLeft'||event.key==='ArrowRight'){event.preventDefault();event.stopPropagation();show(current+(event.key==='ArrowRight'?1:-1))}});
+  controls.append(prev,count,next);viewer.append(frame,controls);node.append(viewer);show(0);return node;
+ }
  if(section.originalHTML&&section.kind!=='video'){const rich=safeHTML(section.originalHTML);rich.querySelectorAll('a:has(img)').forEach(a=>a.dataset.zoom='true');node.append(rich);return node}
  if(section.kind==='overview'){
   node.append(el('p','takeaway',text(language,'The experience at a glance.','快速了解核心体验。')),flowDiagram(tr(project.flow,language),language));return node;

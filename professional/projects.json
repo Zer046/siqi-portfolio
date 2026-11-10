@@ -2541,7 +2541,29 @@
             "videos": [],
             "links": [],
             "diagram": [],
-            "originalHTML": "<p>A digital reflection of you, and the paths you might take. An interactive prototype exploring how a digital human twin could support everyday decisions.</p><p>Product Concept, User Flow &amp; Team Coordination</p>"
+            "originalHTML": "<p>A digital reflection of you, and the paths you might take. An interactive prototype exploring how a digital human twin could support everyday decisions.</p><p>Product Concept, User Flow &amp; Team Coordination</p><p><a class=\"external-link life-prototype-link\" href=\"https://zer046.github.io/Life-Path/#home\" target=\"_blank\" rel=\"noopener\">Explore interactive website ↗</a></p>"
+          },
+          {
+            "lead": "",
+            "paragraphs": [],
+            "notes": [],
+            "html": "",
+            "videos": [],
+            "links": [],
+            "diagram": [],
+            "id": "life-poster",
+            "title": "Project poster",
+            "kind": "gallery",
+            "media": [
+              {
+                "src": "assets/life-path-20261110/poster-1.jpg",
+                "alt": "Life Path poster 1"
+              },
+              {
+                "src": "assets/life-path-20261110/poster-2.jpg",
+                "alt": "Life Path poster 2"
+              }
+            ]
           },
           {
             "id": "section-1",
@@ -2563,6 +2585,88 @@
             ],
             "diagram": [],
             "originalHTML": ""
+          },
+          {
+            "lead": "",
+            "paragraphs": [],
+            "notes": [],
+            "html": "",
+            "videos": [],
+            "links": [],
+            "diagram": [],
+            "id": "life-presentation",
+            "title": "Presentation",
+            "kind": "slideshow",
+            "media": [
+              {
+                "src": "assets/life-path-20261110/slide-01.jpg",
+                "alt": "Life Path presentation 1"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-02.jpg",
+                "alt": "Life Path presentation 2"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-03.jpg",
+                "alt": "Life Path presentation 3"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-04.jpg",
+                "alt": "Life Path presentation 4"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-05.jpg",
+                "alt": "Life Path presentation 5"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-06.jpg",
+                "alt": "Life Path presentation 6"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-07.jpg",
+                "alt": "Life Path presentation 7"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-08.jpg",
+                "alt": "Life Path presentation 8"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-09.jpg",
+                "alt": "Life Path presentation 9"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-10.jpg",
+                "alt": "Life Path presentation 10"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-11.jpg",
+                "alt": "Life Path presentation 11"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-12.jpg",
+                "alt": "Life Path presentation 12"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-13.jpg",
+                "alt": "Life Path presentation 13"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-14.jpg",
+                "alt": "Life Path presentation 14"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-15.jpg",
+                "alt": "Life Path presentation 15"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-16.jpg",
+                "alt": "Life Path presentation 16"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-17.jpg",
+                "alt": "Life Path presentation 17"
+              }
+            ]
           },
           {
             "id": "life-context",
@@ -2661,125 +2765,6 @@
             ]
           },
           {
-            "id": "life-outputs",
-            "title": "Portfolio & project outputs",
-            "kind": "outputs",
-            "lead": "Explore the 15-page presentation and both pages of the final research poster.",
-            "paragraphs": [
-              "Select an image to view it at a larger size."
-            ],
-            "notes": [],
-            "html": "",
-            "media": [
-              {
-                "src": "assets/life-path/presentation-02.jpg",
-                "alt": "Life Path presentation 1",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-03.jpg",
-                "alt": "Life Path presentation 2",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-04.jpg",
-                "alt": "Life Path presentation 3",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-05.jpg",
-                "alt": "Life Path presentation 4",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-06.jpg",
-                "alt": "Life Path presentation 5",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-07.jpg",
-                "alt": "Life Path presentation 6",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-08.jpg",
-                "alt": "Life Path presentation 7",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-09.jpg",
-                "alt": "Life Path presentation 8",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-10.jpg",
-                "alt": "Life Path presentation 9",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-11.jpg",
-                "alt": "Life Path presentation 10",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-12.jpg",
-                "alt": "Life Path presentation 11",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-13.jpg",
-                "alt": "Life Path presentation 12",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-14.jpg",
-                "alt": "Life Path presentation 13",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-15.jpg",
-                "alt": "Life Path presentation 14",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-16.jpg",
-                "alt": "Life Path presentation 15",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/poster-1.jpg",
-                "alt": "Life Path research poster 1",
-                "width": 1413,
-                "height": 2000
-              },
-              {
-                "src": "assets/life-path/poster-2.jpg",
-                "alt": "Life Path research poster 2",
-                "width": 1413,
-                "height": 2000
-              }
-            ],
-            "videos": [],
-            "links": [],
-            "diagram": [],
-            "originalHTML": "<p>Explore the 15-page presentation and both pages of the final research poster. Select an image to view it at a larger size.</p><h4>Project presentation</h4><div class=\"life-slide-viewer\"><div class=\"life-slide-controls\"><span id=\"lifeSlideCount\" aria-live=\"polite\">01 / 15</span></div></div><h4>Final research poster</h4><div class=\"life-posters\"></div>"
-          },
-          {
             "id": "life-reflection",
             "title": "Design insights",
             "kind": "analysis",
@@ -2851,7 +2836,29 @@
             "videos": [],
             "links": [],
             "diagram": [],
-            "originalHTML": "<p>一个数字化的你，以及你可能走向的人生路径。通过交互原型探索数字人类孪生如何辅助日常决策。</p><p>产品概念 / 用户流程 / 团队协调</p>"
+            "originalHTML": "<p>一个数字化的你，以及你可能走向的人生路径。通过交互原型探索数字人类孪生如何辅助日常决策。</p><p>产品概念 / 用户流程 / 团队协调</p><p><a class=\"external-link life-prototype-link\" href=\"https://zer046.github.io/Life-Path/#home\" target=\"_blank\" rel=\"noopener\">体验交互网页 ↗</a></p>"
+          },
+          {
+            "lead": "",
+            "paragraphs": [],
+            "notes": [],
+            "html": "",
+            "videos": [],
+            "links": [],
+            "diagram": [],
+            "id": "life-poster",
+            "title": "项目海报",
+            "kind": "gallery",
+            "media": [
+              {
+                "src": "assets/life-path-20261110/poster-1.jpg",
+                "alt": "Life Path poster 1"
+              },
+              {
+                "src": "assets/life-path-20261110/poster-2.jpg",
+                "alt": "Life Path poster 2"
+              }
+            ]
           },
           {
             "id": "section-1",
@@ -2873,6 +2880,88 @@
             ],
             "diagram": [],
             "originalHTML": "<a class=\"external-link\" href=\"https://www.youtube.com/watch?v=TV7gIQlOZ30\" target=\"_blank\" rel=\"noopener\">在 YouTube 观看 ↗</a>"
+          },
+          {
+            "lead": "",
+            "paragraphs": [],
+            "notes": [],
+            "html": "",
+            "videos": [],
+            "links": [],
+            "diagram": [],
+            "id": "life-presentation",
+            "title": "项目演示文稿",
+            "kind": "slideshow",
+            "media": [
+              {
+                "src": "assets/life-path-20261110/slide-01.jpg",
+                "alt": "Life Path presentation 1"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-02.jpg",
+                "alt": "Life Path presentation 2"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-03.jpg",
+                "alt": "Life Path presentation 3"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-04.jpg",
+                "alt": "Life Path presentation 4"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-05.jpg",
+                "alt": "Life Path presentation 5"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-06.jpg",
+                "alt": "Life Path presentation 6"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-07.jpg",
+                "alt": "Life Path presentation 7"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-08.jpg",
+                "alt": "Life Path presentation 8"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-09.jpg",
+                "alt": "Life Path presentation 9"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-10.jpg",
+                "alt": "Life Path presentation 10"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-11.jpg",
+                "alt": "Life Path presentation 11"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-12.jpg",
+                "alt": "Life Path presentation 12"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-13.jpg",
+                "alt": "Life Path presentation 13"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-14.jpg",
+                "alt": "Life Path presentation 14"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-15.jpg",
+                "alt": "Life Path presentation 15"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-16.jpg",
+                "alt": "Life Path presentation 16"
+              },
+              {
+                "src": "assets/life-path-20261110/slide-17.jpg",
+                "alt": "Life Path presentation 17"
+              }
+            ]
           },
           {
             "id": "life-context",
@@ -2967,123 +3056,6 @@
               "用户理解",
               "自主选择"
             ]
-          },
-          {
-            "id": "life-outputs",
-            "title": "作品集与项目产出",
-            "kind": "outputs",
-            "lead": "浏览 15 页演示文稿与完整双页研究海报，点击图片可放大查看。",
-            "paragraphs": [],
-            "notes": [],
-            "html": "",
-            "media": [
-              {
-                "src": "assets/life-path/presentation-02.jpg",
-                "alt": "Life Path presentation 1",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-03.jpg",
-                "alt": "Life Path presentation 2",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-04.jpg",
-                "alt": "Life Path presentation 3",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-05.jpg",
-                "alt": "Life Path presentation 4",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-06.jpg",
-                "alt": "Life Path presentation 5",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-07.jpg",
-                "alt": "Life Path presentation 6",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-08.jpg",
-                "alt": "Life Path presentation 7",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-09.jpg",
-                "alt": "Life Path presentation 8",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-10.jpg",
-                "alt": "Life Path presentation 9",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-11.jpg",
-                "alt": "Life Path presentation 10",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-12.jpg",
-                "alt": "Life Path presentation 11",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-13.jpg",
-                "alt": "Life Path presentation 12",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-14.jpg",
-                "alt": "Life Path presentation 13",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-15.jpg",
-                "alt": "Life Path presentation 14",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/presentation-16.jpg",
-                "alt": "Life Path presentation 15",
-                "width": 1600,
-                "height": 900
-              },
-              {
-                "src": "assets/life-path/poster-1.jpg",
-                "alt": "Life Path research poster 1",
-                "width": 1413,
-                "height": 2000
-              },
-              {
-                "src": "assets/life-path/poster-2.jpg",
-                "alt": "Life Path research poster 2",
-                "width": 1413,
-                "height": 2000
-              }
-            ],
-            "videos": [],
-            "links": [],
-            "diagram": [],
-            "originalHTML": "<p>浏览 15 页演示文稿与完整双页研究海报，点击图片可放大查看。</p><h4>项目演示文稿</h4><div class=\"life-slide-viewer\"><div class=\"life-slide-controls\"><span id=\"lifeSlideCount\" aria-live=\"polite\">01 / 15</span></div></div><h4>最终研究海报</h4><div class=\"life-posters\"></div>"
           },
           {
             "id": "life-reflection",

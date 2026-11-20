@@ -4143,34 +4143,39 @@
       "portfolio": {
         "pages": [
           {
-            "src": "assets/backstage-portfolio-20261109/page-1.jpg",
-            "alt": "Backstage — 1 / 6"
+            "src": "assets/backstage-portfolio-20261120/page-1.webp",
+            "alt": "Backstage — 1 / 7"
           },
           {
-            "src": "assets/backstage-portfolio-20261109/page-2.jpg",
-            "alt": "Backstage — 2 / 6"
+            "src": "assets/backstage-portfolio-20261120/page-2.webp",
+            "alt": "Backstage — 2 / 7"
           },
           {
-            "src": "assets/backstage-portfolio-20261109/page-3.jpg",
-            "alt": "Backstage — 3 / 6"
+            "src": "assets/backstage-portfolio-20261120/page-3.webp",
+            "alt": "Backstage — 3 / 7"
           },
           {
-            "src": "assets/backstage-portfolio-20261109/page-4.jpg",
-            "alt": "Backstage — 4 / 6"
+            "src": "assets/backstage-portfolio-20261120/page-4.webp",
+            "alt": "Backstage — 4 / 7"
           },
           {
-            "src": "assets/backstage-portfolio-20261109/page-5.jpg",
-            "alt": "Backstage — 5 / 6"
+            "src": "assets/backstage-portfolio-20261120/page-5.webp",
+            "alt": "Backstage — 5 / 7"
           },
           {
-            "src": "assets/backstage-portfolio-20261109/page-6.jpg",
-            "alt": "Backstage — 6 / 6"
+            "src": "assets/backstage-portfolio-20261120/page-6.webp",
+            "alt": "Backstage — 6 / 7"
+          },
+          {
+            "src": "assets/backstage-portfolio-20261120/page-7.webp",
+            "alt": "Backstage — 7 / 7"
           }
         ],
         "labels": [
           [
             "Project introduction",
-            "Gameplay, code & levels",
+            "Gameplay & coding",
+            "Level design",
             "Narrative & emotional arc",
             "Playtesting & iteration",
             "Art direction",
@@ -4178,14 +4183,15 @@
           ],
           [
             "项目介绍",
-            "玩法、实现与关卡",
+            "玩法与实现",
+            "关卡设计",
             "叙事与情绪曲线",
             "测试与迭代",
             "美术方向",
             "调研与灵感"
           ]
         ],
-        "thumbnail": "professional/assets/backstage-portfolio.webp"
+        "thumbnail": "assets/backstage-portfolio-20261120/page-1.webp"
       },
       "sections": [
         [

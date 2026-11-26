@@ -60,3 +60,17 @@
 .presentation-controls button{min-width:48px;min-height:44px;border:1px solid #cabbd5;border-radius:5px;background:#e4dcec;color:#655272;font-size:24px}
 .presentation-controls button:disabled{opacity:.35;cursor:default}
 .presentation-count{min-width:75px;text-align:center;font-variant-numeric:tabular-nums}
+
+/* Lead with the pitch and keep project actions in one place. */
+.home-summary{color:var(--ink);font-weight:700}
+.integrated-pages{margin-top:22px;margin-bottom:42px}
+@media(min-width:960px){
+ .home-heading{grid-row:1}.home-feature>.project-toolbar{grid-row:1}
+ .home-summary{grid-row:2;grid-column:1/-1;margin:0}
+ .home-stage{grid-row:3;grid-column:1/-1}
+}
+@media(max-width:959px){
+ .home-heading{order:1}.home-summary{order:2;margin:14px 0 0}
+ .home-stage{order:3}.home-feature>.project-toolbar{order:4}
+}
+@media(max-width:420px){.site-nav{gap:6px}.site-nav>a,.site-nav>button,.menu-trigger{font-size:13px}}

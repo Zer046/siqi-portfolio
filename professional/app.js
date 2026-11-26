@@ -1,4 +1,4 @@
-import{loadProjects,applyEditorData,text}from'./data.js';import{readRoute,routeHash,gameIds}from'./router.js';import{siteHeader,createImageDialog,el,link}from'./components.js';import{homeView,detailView,portfolioView,portfolioIndex,projectIndex,aboutDialog}from'./views.js';import{connectReader}from'./reader.js';
+import{loadProjects,applyEditorData,text}from'./data.js';import{readRoute,routeHash,gameIds}from'./router.js';import{siteHeader,createImageDialog,el,link}from'./components.js';import{homeView,detailView,projectIndex,aboutDialog}from'./views.js';import{connectReader}from'./reader.js';
 import '../interaction-sounds.js';
 const storage={get(key,fallback){try{return localStorage.getItem(key)||fallback}catch{return fallback}},set(key,value){try{localStorage.setItem(key,value)}catch{}}};
 const state={language:Number(storage.get('portfolio-language','0'))||0,homeId:storage.get('portfolio-home','clock-out'),route:null,currentHash:'',headerSignal:null};
@@ -37,13 +37,14 @@ function saveScroll(){if(state.currentHash)scrollPositions.set(state.currentHash
 function showAbout(){const dialog=aboutDialog(state.language);document.body.append(dialog);dialog.addEventListener('close',()=>dialog.remove());dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close()});dialog.showModal()}
 function setLanguage(language){saveScroll();state.language=language;storage.set('portfolio-language',String(language));render({restore:true})}
 function render({restore=false}={}){
+ if(!source.length)return;
  readerCleanup();headerController?.abort();headerController=new AbortController();state.headerSignal=headerController.signal;if(zoom.open)zoom.close();
  projects=ordered(applyEditorData(source,editor,state.language));state.route=readRoute(location.hash,projects,state.homeId);
- const raw=location.hash.split('?')[0],canonical=routeHash(state.route);if(raw!==canonical)history.replaceState(history.state,'',canonical);state.currentHash=location.hash;
+ const raw=location.hash.split('?')[0],canonical=routeHash(state.route);if(raw!==canonical)history.replaceState(history.state,'',canonical+(location.hash.includes('?')?'?'+location.hash.split('?')[1]:''));state.currentHash=location.hash;
  const route=state.route,project=projects.find(p=>p.id===route.id);if(project?.category==='games'){state.homeId=project.id;storage.set('portfolio-home',project.id)}
  document.documentElement.lang=state.language?'zh-CN':'en';document.body.dataset.view=route.view;
  const header=siteHeader(projects,state,setLanguage,showAbout);let main;
- if(route.view==='home')main=homeView(projects,project,state.language);else if(route.view==='details')main=detailView(project,state.language);else if(route.view==='portfolio')main=portfolioView(project,state.language);else if(route.view==='projects')main=projectIndex(projects,state.language,route.id);else main=portfolioIndex(projects,state.language);
+ if(route.view==='home')main=homeView(projects,project,state.language);else if(route.view==='details')main=detailView(project,state.language);else if(route.view==='projects')main=projectIndex(projects,state.language,route.id);else main=projectIndex(projects,state.language,'all');
  main.tabIndex=-1;mount.replaceChildren(header,main);stabilizeHome(main);document.title=(project?project.title+' · '+(route.view==='details'?'Project Details':route.view==='portfolio'?'Design Portfolio':'Home'):route.view==='projects'?'Projects':'Design Portfolios')+' | Siqi (Misty) Zhang';
  readerCleanup=connectReader(main,{language:state.language,onAddressChange:id=>{
   const base=routeHash(route),params=new URLSearchParams();params.set(route.view==='portfolio'?'page':'section',route.view==='portfolio'?id.replace('portfolio-page-',''):id);history.replaceState(history.state,'',base+'?'+params);state.currentHash=location.hash;

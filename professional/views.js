@@ -12,7 +12,7 @@ export function homeView(projects,project,language){
  const i=gameIds.indexOf(project.id),previous=gameIds[(i+gameIds.length-1)%gameIds.length],next=gameIds[(i+1)%gameIds.length];
  const prev=link('‹','#home/'+previous,'project-arrow previous'),nextLink=link('›','#home/'+next,'project-arrow next');prev.setAttribute('aria-label',text(language,'Previous game on Home','首页上一个游戏'));nextLink.setAttribute('aria-label',text(language,'Next game on Home','首页下一个游戏'));
  stage.append(videoPlayer(project,project.video,text(language,'Trailer','演示'),language,{cover:true}),prev,nextLink);
- feature.append(heading,toolbar,stage,el('p','home-summary',tr(project.summary,language)));main.append(selector,feature);return main;
+ feature.append(heading,toolbar,el('p','home-summary',tr(project.summary,language)),stage);main.append(selector,feature);return main;
 }
 
 function readerShell(project,language,{portfolio=false}={}){
@@ -66,16 +66,18 @@ function analysisSection(section,project,language){
 }
 export function detailView(project,language){
  const shell=readerShell(project,language);shell.article.append(overviewHero(project,language));const sections=[];
+ if(project.portfolio){
+  const pages=el('div','portfolio-pages integrated-pages');
+  project.portfolio.pages.forEach((page,i)=>{
+   const figure=el('figure','portfolio-page');figure.id='portfolio-page-'+(i+1);
+   const label=project.portfolio.labels[language][i],a=link('',page.src,'zoomable');a.dataset.zoom='true';a.setAttribute('aria-label',project.title+' — '+label);
+   const img=image(page.src,project.title+' — '+String(i+1).padStart(2,'0')+' / '+label,!i);img.width=2200;img.height=1238;a.append(img);
+   figure.append(a,el('figcaption','',String(i+1).padStart(2,'0')+' / '+project.portfolio.pages.length+' · '+label));pages.append(figure);sections.push({element:figure,label});
+  });shell.article.append(pages);
+ }
  for(const section of project.sections[language]){const node=analysisSection(section,project,language);shell.article.append(node);sections.push({element:node,label:section.title})}
- if(project.portfolio){const footer=el('div','reader-footer');footer.append(link('Portfolio →','#portfolio/'+project.id,'action action-portfolio'));shell.article.append(footer)}sectionNavigation(shell.navigation,sections,language);return shell.main;
+ sectionNavigation(shell.navigation,sections,language);return shell.main;
 }
-export function portfolioView(project,language){
- const shell=readerShell(project,language,{portfolio:true});const intro=el('div','portfolio-intro');intro.append(el('p','eyebrow','Design Portfolio'),el('h2','',text(language,'Design, process & development','设计、过程与开发')),el('p','',project.portfolio.pages.length+text(language,' pages · Click a page to enlarge.',' 页 · 点击页面可放大查看。')));shell.article.append(intro);
- const pages=el('div','portfolio-pages'),sections=[];
- project.portfolio.pages.forEach((page,i)=>{const figure=el('figure','portfolio-page');figure.id='portfolio-page-'+(i+1);const label=project.portfolio.labels[language][i];const a=link('',page.src,'zoomable');a.dataset.zoom='true';a.setAttribute('aria-label',project.title+' — '+label);const img=image(page.src,project.title+' — '+String(i+1).padStart(2,'0')+' / '+label,!i);img.width=2200;img.height=1238;a.append(img);figure.append(a,el('figcaption','',String(i+1).padStart(2,'0')+' / '+project.portfolio.pages.length+' · '+label));pages.append(figure);sections.push({element:figure,label})});shell.article.append(pages);
- const footer=el('div','reader-footer');footer.append(link('More →','#project/'+project.id,'action action-details'));shell.article.append(footer);sectionNavigation(shell.navigation,sections,language);return shell.main;
-}
-export function portfolioIndex(projects,language){const main=el('main','portfolio-index');main.id='main';main.append(el('p','eyebrow','Design Portfolio'),el('h1','project-title',text(language,'Selected design portfolios','精选设计作品集')),el('p','index-intro',text(language,'Read the original design decks, with a page-by-page contents list.','通过逐页目录，阅读完整的原版设计作品集。')));const grid=el('div','portfolio-grid');for(const p of projects.filter(p=>p.portfolio)){const card=link('','#portfolio/'+p.id,'portfolio-card');card.append(image(p.portfolio.thumbnail,p.title),el('h2','','“'+p.title+'”'),el('p','',p.portfolio.pages.length+text(language,' pages · Design Portfolio →',' 页 · Design Portfolio →')));grid.append(card)}main.append(grid);return main}
 export function projectIndex(projects,language,category){const main=el('main','portfolio-index');main.id='main';main.append(el('p','eyebrow','Project Details'),el('h1','project-title',category==='others'?text(language,'Other Projects','其它项目'):text(language,'Projects','项目')));const grid=el('div','portfolio-grid');for(const p of projects.filter(p=>category!=='others'||p.category==='others')){const card=link('','#project/'+p.id,'portfolio-card');card.append(image(p.cover,p.title),el('h2','','“'+p.title+'”'),el('p','',tr(p.sub,language)+' · '+p.date),el('p','',tr(p.role,language)));grid.append(card)}main.append(grid);return main}
 
 export function aboutDialog(language){const dialog=el('dialog','about-dialog');dialog.setAttribute('aria-label','About Misty');const close=button('×','dialog-close',()=>dialog.close());close.setAttribute('aria-label','Close about / 关闭介绍');dialog.append(close,el('p','eyebrow',text(language,'About me','关于我')),el('h1','',text(language,"Hi! I’m Misty.",'你好呀！我是思齐。')),el('p','',text(language,"I'm Siqi(Misty) Zhang. I'm a game design student exploring how mechanics, narrative and physical interaction can create meaningful experiences. My work spans independent games, collaborative development, tabletop design and interactive media.",'我是思齐，英文名 Misty，一名游戏设计在读学生。我关注机制、叙事与实体交互如何共同创造有意义的体验，创作涵盖独立游戏、团队开发、桌游和互动媒体。')),el('p','',text(language,'Outside of making games, I love travelling solo, powerlifting, surfing, film photography, and… cats!','除了做游戏，我喜欢独自旅行、力量举、冲浪、胶片摄影，以及……小猫咪！')));const links=el('div','context-links');links.append(link('itch.io ↗','https://zer046.itch.io/','action action-details'),link('Development journal ↗','https://sites.wsagames.com/sz3c23/','action action-portfolio'));dialog.append(links);return dialog}
